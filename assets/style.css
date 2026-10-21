@@ -138,7 +138,8 @@ p { margin: 0 0 1em; }
   position: relative; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 62%;
   border-radius: var(--raio);
 }
-.lista-check { list-style: none; padding: 0; margin: 1.5em 0 0; }
+.sobre__subtitulo { margin: 1.6em 0 0; font-size: 1.25rem; }
+.lista-check { list-style: none; padding: 0; margin: .8em 0 0; }
 .lista-check li { position: relative; padding-left: 1.9em; margin-bottom: .6em; color: var(--vinho); font-weight: 500; }
 .lista-check li::before {
   content: ""; position: absolute; left: 0; top: .45em; width: 1.1em; height: .6em;
@@ -157,23 +158,14 @@ p { margin: 0 0 1em; }
 .card__num { font-family: var(--serif); font-size: 2rem; color: var(--rosa-claro); font-weight: 700; display: block; margin-bottom: 8px; }
 .card p { margin: 0; font-size: .97rem; }
 
-/* Consultório */
-.consultorio { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
-.consultorio__foto { margin: 0; width: 100%; max-width: 480px; justify-self: end; }
-.consultorio__foto img {
-  width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: 50% 55%;
-  border-radius: var(--raio) var(--raio) 200px var(--raio);
-}
-
 /* Contato */
-.contato { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: stretch; }
+.contato { max-width: 640px; text-align: center; }
+.contato__lista { text-align: left; }
 .contato__lista { list-style: none; padding: 0; margin: 1.5em 0 2em; }
 .contato__lista li { padding: 14px 0; border-bottom: 1px solid rgba(255, 255, 255, .15); }
 .contato__lista span { display: block; font-size: .75rem; letter-spacing: .15em; text-transform: uppercase; color: var(--rosa-claro); }
 .contato__lista a { text-decoration: none; color: #fff; }
 .contato__lista a:hover { text-decoration: underline; }
-.contato__mapa { border-radius: var(--raio); overflow: hidden; min-height: 360px; }
-.contato__mapa iframe { width: 100%; height: 100%; min-height: 360px; border: 0; display: block; }
 
 /* Rodapé */
 .rodape { padding: 40px 0; border-top: 1px solid var(--linha); text-align: center; font-size: .9rem; }
@@ -207,13 +199,12 @@ p { margin: 0 0 1em; }
   .menu .botao { margin-top: 16px; }
 
   .hero { padding: 40px 0 64px; }
-  .hero__grade, .sobre, .consultorio, .contato { grid-template-columns: 1fr; gap: 40px; }
+  .hero__grade, .sobre { grid-template-columns: 1fr; gap: 40px; }
   .hero__foto { max-width: 420px; margin-inline: auto; width: 100%; }
   .hero__foto figcaption { left: 12px; }
   .hero__marca-dagua { width: 360px; right: -80px; top: 0; opacity: .35; }
   .sobre__foto { max-width: 420px; margin-inline: auto; width: 100%; }
   .sobre__foto::before { inset: 16px -12px -16px 12px; }
-  .consultorio__foto { order: -1; }
   .destaques__grade, .cards { grid-template-columns: 1fr; }
   .secao { padding: 72px 0; }
 }
